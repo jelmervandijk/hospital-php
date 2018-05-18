@@ -31,6 +31,7 @@ CREATE TABLE IF NOT EXISTS `patients` (
   `species_id` int(11) NOT NULL,
   `client_id` int(11) NOT NULL,
   `patient_status` text,
+  `patient_gender` text,
   PRIMARY KEY (`patient_id`),
   FOREIGN KEY (`species_id`) REFERENCES `species`(`species_id`),
   FOREIGN KEY (`client_id`) REFERENCES `clients`(`client_id`)
